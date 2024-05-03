@@ -1,3 +1,2 @@
-# MetaKnight Unblocked Games
-Unblocked Games for school, work, and home use.
-Adding new games every week!
+# MetaKnight Open Source Things
+Directory Of Open Source Programs AND NOT A GAMES SITE
