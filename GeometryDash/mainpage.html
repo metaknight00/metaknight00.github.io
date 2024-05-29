@@ -35,6 +35,9 @@
             display: flex;
             gap: 15px;
         }
+        .menu-bar .menu a {
+            text-decoration: none;
+        }
         .menu-bar .menu button {
             background-color: rgba(255, 255, 255, 0.2);
             color: #d1d1d1;
@@ -76,13 +79,37 @@
     <div class="menu-bar">
         <div class="title">MetaKnight UBG | Geometry Dash</div>
         <div class="menu">
-            <button>Option 1</button>
-            <button>Option 2</button>
-            <button>Option 3</button>
-            <button>Random Game</button>
+            <a href="option1.html"><button>🎮Games</button></a>
+            <a href="option2.html"><button>📶Proxy</button></a>
+            <a href="option3.html"><button>☁️Cloud Servers</button></a>
+            <button onclick="randomGame()">Random Game</button>
         </div>
     </div>
     <iframe src="your-game.html"></iframe>
-    <button class="custom-hacks-button">Custom Hacks</button>
+    <button class="custom-hacks-button" onclick="window.location.href='custom-hacks.html'">Custom Hacks</button>
+
+    <script>
+        function randomGame() {
+            const pages = [
+                'game1.html',
+                'game2.html',
+                'game3.html',
+                'game4.html',
+                'game5.html',
+                'game6.html',
+                'game7.html',
+                'game8.html',
+                'game9.html',
+                'game10.html',
+                'game11.html',
+                'game12.html',
+                'game13.html',
+                'game14.html',
+                'game15.html'
+            ];
+            const randomPage = pages[Math.floor(Math.random() * pages.length)];
+            window.location.href = randomPage;
+        }
+    </script>
 </body>
 </html>
